@@ -1,0 +1,1450 @@
+/* line 34, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+body {
+  margin: 0px;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  background-color: #F6F8F9; }
+
+/* line 41, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.main_body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr 198px 609px 150px 1.3fr 1fr;
+  grid-template-columns: 1.3fr 1fr 198px 609px 150px 1.3fr 1fr;
+  grid-column-gap: 22px;
+  grid-row-gap: 21px;
+  grid-template-areas: "header header header header header header header" ". . profile posts people_visits . ." ". . profile background people_visits . ." ". . . background . . . " ". . . recommendations . . ." ". . . following . . ." "footer footer footer footer footer footer footer"; }
+
+/* line 49, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.header {
+  background-color: white;
+  grid-area: header;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 81px 39px;
+  grid-template-rows: 81px 39px; }
+  /* line 56, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .header .main_header {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(211, 211, 211, 0.5);
+    -ms-grid-columns: 436px 69px 192px 519px 179px 1.3fr 1fr;
+    grid-template-columns: 436px 69px 192px 519px 179px 1.3fr 1fr;
+    grid-template-areas: " . logo input_wrapper text_wrapper icons_wrapper avatar"; }
+    /* line 63, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .logo {
+      grid-area: logo;
+      padding-right: 20px;
+      padding-left: 20px; }
+      /* line 65, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .logo img {
+        width: 28px;
+        height: 28px; }
+    /* line 72, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .input_wrapper {
+      grid-area: input_wrapper;
+      padding-right: 20px;
+      padding-left: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.5); }
+      /* line 78, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .input_wrapper input {
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        border: 0.5px solid lightgrey;
+        height: 26px;
+        width: 145px; }
+      /* line 84, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .input_wrapper input::-webkit-input-placeholder {
+        font-size: 15px; }
+      .header .main_header .input_wrapper input:-moz-placeholder {
+        font-size: 15px; }
+      .header .main_header .input_wrapper input::-moz-placeholder {
+        font-size: 15px; }
+      .header .main_header .input_wrapper input:-ms-input-placeholder {
+        font-size: 15px; }
+      .header .main_header .input_wrapper input::placeholder {
+        font-size: 15px; }
+    /* line 88, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .adw {
+      color: red; }
+    /* line 91, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .text_wrapper {
+      grid-area: text_wrapper;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.5); }
+      /* line 98, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .text_wrapper span {
+        -webkit-transition: .1s;
+        -o-transition: .1s;
+        -moz-transition: .1s;
+        transition: .1s; }
+      /* line 101, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .text_wrapper span:hover {
+        padding-bottom: 10px; }
+    /* line 105, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .icons_wrapper {
+      grid-area: icons_wrapper;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.5);
+      padding-left: 20px;
+      padding-right: 20px; }
+    /* line 112, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .main_header .avatar {
+      grid-area: avatar;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.5);
+      padding-left: 20px; }
+      /* line 117, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .main_header .avatar img {
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px; }
+  /* line 124, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .header .subheader {
+    background-color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 454px 463px 1fr 1fr;
+    grid-template-columns: 454px 463px 1fr 1fr;
+    grid-template-areas: " . list . ."; }
+    /* line 131, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .header .subheader .list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      grid-area: list;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      /* line 138, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .subheader .list div {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0px 20px 0px 20px; }
+      /* line 146, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .subheader .list div:hover {
+        border-bottom: 2px solid lightblue; }
+      /* line 150, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .subheader .list > :first-child {
+        border-bottom: 2px solid blue; }
+      /* line 153, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .header .subheader .list .selected {
+        border-bottom: 2px solid blue; }
+
+/* line 160, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.default_button {
+  border: 1px solid #63B3E4;
+  width: 157px;
+  margin-top: 11px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 34px;
+  color: #63B3E4;
+  background-color: white; }
+
+/* line 170, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.default_button:hover {
+  background-color: rgba(173, 216, 230, 0.5); }
+
+/* line 176, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.block_header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.5);
+  padding: 0px 20px 0px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 59px; }
+  /* line 186, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .block_header .controls {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 68px; }
+    /* line 190, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .block_header .controls i {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 0.5px solid black;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
+      border-radius: 60px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    /* line 200, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .block_header .controls i:active {
+      background-color: lightblue; }
+
+/* line 206, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.profile_small {
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 211, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile_small img {
+    width: 39px;
+    height: 39px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; }
+  /* line 216, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile_small .col {
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    /* line 220, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile_small .col span:first-of-type {
+      font-weight: bold;
+      font-size: 14px;
+      color: black; }
+    /* line 223, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile_small .col span {
+      font-size: 13px;
+      color: gray;
+      margin-top: 4px;
+      margin-top: 4px; }
+
+/* line 230, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.posts {
+  border: 0.5px solid rgba(173, 216, 230, 0.5);
+  background-color: white;
+  grid-area: posts;
+  height: 341px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 59px 1fr;
+  grid-template-rows: 59px 1fr; }
+  /* line 238, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .posts .in_posts {
+    padding: 20px 20px 20px 20px; }
+    /* line 241, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .posts .in_posts .articles {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      /* line 245, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .posts .in_posts .articles .article {
+        width: 176px; }
+        /* line 247, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .posts .in_posts .articles .article img {
+          width: 100%;
+          height: 176px; }
+        /* line 251, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .posts .in_posts .articles .article h1 {
+          margin: 0px;
+          font-size: 15px;
+          margin-top: 6px;
+          font-weight: bolder; }
+        /* line 257, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .posts .in_posts .articles .article span {
+          font-size: 13px;
+          color: gray;
+          margin-top: 4px; }
+      /* line 262, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .posts .in_posts .articles .article:hover h1 {
+        text-decoration: underline; }
+
+/* line 270, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.profile {
+  border: 0.5px solid rgba(173, 216, 230, 0.5);
+  grid-area: profile;
+  height: 514px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px; }
+  /* line 279, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile img {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 100px; }
+  /* line 283, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0px; }
+  /* line 287, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile span:first-of-type {
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px;
+    color: black;
+    font-size: 13.5px; }
+  /* line 292, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile span {
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px; }
+  /* line 295, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile button:first-of-type {
+    background-color: #63B3E4;
+    color: white;
+    margin-top: 8px; }
+  /* line 300, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile .row:first-of-type {
+    margin-top: 20px; }
+  /* line 303, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .profile .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    border-top: 0.5px solid rgba(211, 211, 211, 0.5);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    /* line 309, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile .row .col:first-of-type {
+      border-right: 0.5px solid rgba(211, 211, 211, 0.5); }
+    /* line 312, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile .row .col {
+      padding: 19px 0px 19px 0px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 50%;
+      height: 34px; }
+      /* line 320, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .profile .row .col p::first-line {
+        font-weight: bold;
+        color: black;
+        font-size: 15px; }
+      /* line 325, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .profile .row .col p {
+        width: 70px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-size: 13px;
+        color: gray;
+        margin-top: 4px;
+        margin: 0px; }
+    /* line 334, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile .row .info_col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 91px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      /* line 342, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .profile .row .info_col .info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 26px;
+        padding-left: 20px; }
+        /* line 351, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .profile .row .info_col .info i {
+          margin-right: 7px; }
+        /* line 354, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .profile .row .info_col .info a {
+          font-size: 13px;
+          color: gray;
+          margin-top: 4px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          font-size: 12px;
+          text-decoration: none; }
+    /* line 363, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .profile .row .export {
+      height: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 20px;
+      height: 50px; }
+      /* line 373, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .profile .row .export i {
+        margin-right: 7px; }
+      /* line 376, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .profile .row .export a {
+        font-size: 13px;
+        color: gray;
+        margin-top: 4px; }
+
+/* line 383, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.background {
+  grid-area: background;
+  border: 0.5px solid rgba(211, 211, 211, 0.5);
+  height: 866px;
+  background-color: white; }
+  /* line 389, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .background .items_list {
+    padding: 20px 20px 0px 20px; }
+    /* line 391, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .background .items_list .item:first-of-type {
+      margin-top: 0px; }
+    /* line 394, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .background .items_list .item {
+      margin-bottom: 21px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      /* line 397, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .container_header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 20px; }
+        /* line 402, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .container_header i {
+          margin-right: 10px; }
+      /* line 406, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .text {
+        padding-left: 34px;
+        padding-top: 9px;
+        line-height: 20px;
+        font-size: 15px; }
+      /* line 412, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .promotion {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 6px;
+        padding-left: 38px; }
+        /* line 419, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion .line_wrapper {
+          position: relative;
+          padding-top: 14px; }
+        /* line 423, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion .line {
+          width: 0px;
+          height: 65%;
+          border: 1px solid gray; }
+        /* line 428, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion .line::before {
+          content: ' ';
+          width: 7px;
+          height: 7px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          border: 0.5px solid gray;
+          position: absolute;
+          top: 6px;
+          left: -3px; }
+        /* line 438, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion .line::after {
+          content: ' ';
+          width: 7px;
+          height: 7px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          border: 0.5px solid gray;
+          position: absolute;
+          top: 70%;
+          left: -3px; }
+      /* line 449, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .promotion_info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 15px; }
+        /* line 454, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion_info .promotion_item:first-of-type {
+          margin-top: 0px; }
+        /* line 457, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .promotion_info .promotion_item {
+          margin-top: 10px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -moz-box-orient: horizontal;
+          -moz-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin-top: 20px; }
+          /* line 465, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+          .background .items_list .item .promotion_info .promotion_item .text_container {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -moz-box-orient: vertical;
+            -moz-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            line-height: 21px; }
+            /* line 469, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .promotion_info .promotion_item .text_container span:first-of-type {
+              font-size: 10px;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: gray; }
+            /* line 475, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .promotion_info .promotion_item .text_container span {
+              font-size: 14px; }
+            /* line 478, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .promotion_info .promotion_item .text_container a {
+              text-decoration: none;
+              font-size: 15px;
+              color: #63B3E4; }
+            /* line 483, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .promotion_info .promotion_item .text_container a:hover {
+              text-decoration: underline; }
+          /* line 488, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+          .background .items_list .item .promotion_info .promotion_item .img_container img {
+            width: 100px; }
+      /* line 494, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .skills {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 116px; }
+        /* line 499, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .skills .skill {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -moz-box-orient: horizontal;
+          -moz-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          width: 100%;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          padding: 9px 0px 0px 34px;
+          text-transform: capitalize;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+          /* line 507, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+          .background .items_list .item .skills .skill > :nth-child(1) {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+            /* line 512, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .skills .skill > :nth-child(1) > :nth-child(1) {
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 30px;
+              -moz-border-radius: 30px;
+              border-radius: 30px;
+              border: 1px solid black;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: row;
+              -moz-box-orient: horizontal;
+              -moz-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -moz-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -moz-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-right: 20px; }
+            /* line 523, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .skills .skill > :nth-child(1) > :nth-child(2) {
+              font-size: 15px; }
+          /* line 527, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+          .background .items_list .item .skills .skill > :nth-child(2) {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 37%;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+            /* line 534, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .skills .skill > :nth-child(2) img {
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 40px;
+              -moz-border-radius: 40px;
+              border-radius: 40px; }
+            /* line 539, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+            .background .items_list .item .skills .skill > :nth-child(2) .hidden {
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 40px;
+              -moz-border-radius: 40px;
+              border-radius: 40px;
+              background-color: lightgrey;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: row;
+              -moz-box-orient: horizontal;
+              -moz-box-direction: normal;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -moz-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -moz-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              font-size: 9px;
+              font-weight: bold; }
+      /* line 554, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .background .items_list .item .interests {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 10px;
+        padding-left: 35px; }
+        /* line 559, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .background .items_list .item .interests div {
+          background-color: lightgrey;
+          height: 24px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -moz-box-orient: horizontal;
+          -moz-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-right: 12px; }
+          /* line 567, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+          .background .items_list .item .interests div span {
+            padding-left: 7px;
+            padding-right: 7px;
+            font-size: 13px; }
+
+/* line 579, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.people_visits {
+  grid-area: people_visits;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 418px;
+  font-size: 14px; }
+  /* line 587, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .people_visits .named_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    /* line 590, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .people_visits .named_list .list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 20px;
+      height: 166px; }
+  /* line 598, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .people_visits .more_influencers {
+    margin-top: 48px; }
+    /* line 600, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .people_visits .more_influencers .inf_profile {
+      text-transform: capitalize;
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      /* line 602, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .people_visits .more_influencers .inf_profile span:first-of-type {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        margin-top: 13px; }
+      /* line 606, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .people_visits .more_influencers .inf_profile span {
+        font-size: 13px;
+        color: gray;
+        margin-top: 4px; }
+      /* line 609, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .people_visits .more_influencers .inf_profile .nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        /* line 610, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .people_visits .more_influencers .inf_profile .nav .left_nav {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+          -moz-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          padding-bottom: 18px;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+          -moz-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          width: 30px; }
+        /* line 618, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .people_visits .more_influencers .inf_profile .nav .right_nav {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+          -moz-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          padding-bottom: 18px;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+          -moz-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          width: 30px; }
+      /* line 633, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .people_visits .more_influencers .inf_profile img {
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 80px;
+        -moz-border-radius: 80px;
+        border-radius: 80px; }
+
+/* line 642, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.recommendations {
+  background-color: white;
+  grid-area: recommendations;
+  height: 365px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(211, 211, 211, 0.5); }
+  /* line 649, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .recommendations .list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    /* line 657, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .recommendations .list div {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 180px; }
+      /* line 660, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .recommendations .list div .text_wrapper {
+        font-size: 14px;
+        border: 0.5px solid rgba(211, 211, 211, 0.5);
+        padding: 20px;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px; }
+      /* line 668, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .recommendations .list div .text-wrapper::after {
+        display: inline-block;
+        content: ' ';
+        position: absolute; }
+
+/* line 677, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.following {
+  background-color: white;
+  grid-area: following;
+  height: 290px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(211, 211, 211, 0.5); }
+  /* line 684, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .following .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 20px 0px 20px;
+    text-transform: capitalize; }
+    /* line 693, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+    .following .list div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      /* line 697, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .following .list div span {
+        margin-top: 20px;
+        font-size: 15px; }
+      /* line 701, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .following .list div .img_wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: 0.5px solid rgba(211, 211, 211, 0.5);
+        width: 128px;
+        height: 73px; }
+        /* line 709, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+        .following .list div .img_wrapper img {
+          width: 90px; }
+      /* line 713, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .following .list div button {
+        border: none;
+        background: none;
+        color: #63B3E4;
+        position: relative;
+        margin-top: 6px;
+        font-size: 14px;
+        width: 100px;
+        margin-left: 0px; }
+      /* line 723, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+      .following .list div button:before {
+        content: "+";
+        border: 1px solid #63B3E4;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0px;
+        top: -3px; }
+  /* line 735, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+  .following button {
+    margin-top: 21px;
+    width: 136px;
+    margin-left: 20px; }
+
+/* line 742, /home/pld/Documents/fronloops/Loop 2 - Step 10/src/scss/main.scss */
+.footer {
+  background-color: white;
+  grid-area: footer;
+  height: 57px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+  border-top: 0.5px solid rgba(211, 211, 211, 0.5); }
